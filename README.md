@@ -6,6 +6,14 @@ LearnAndroidNdk
 # What is NDK?
 NDK which stands for Native Development Kit is a set of tools or a toolset that will allow us to use C/C++ in our Android Application. Isn’t that cool? It is called Native because of the use of native-code languages in it such as C and C++ , It provides access to low-level APIs and hardware, allowing developers to optimize their applications for performance and efficiency.
 
+# What is JNI?
+JNI is the Java Native Interface. It defines a way for the bytecode that Android compiles from managed code (written in the Java or Kotlin programming languages) to interact with native code (written in C/C++).
+
+# What is NDK vs JNI?
+JNI is just the way that Java handles calling into native/C++ code, and calling back into Java from there. It has nothing to say about Android - it is a Java language feature.
+
+The Android NDK is a way to write Android applications using code called by JNI. It's specific to Android and gives native code access to Android APIs at that level.
+
 # Why is NDK Useful?
 Now, we will answer this question with the help of an example. Let’s say you want to add a critical function or a specific processor-dependent code to your own app which will require high performance, using Java only. It would not succeed so in order to get the following requirements, you have to use C or C++ which will make it run faster. But even if we know C or C++, how would we implement it in our app? So this is where we require NDK to integrate the native-code languages to make it run on the app. Let’s see some more advantages of using NDK: 
 
